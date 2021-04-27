@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+Tu vois ça marche bien
+<p th:text="${message}"></p>
+<form action="/calc" method="post">
+    <input type="number" name="a">
+    <input type="number" name="b">
+    <button type="submit">Valider</button>
+</form>
+<div class="carre rouge">Hehe</div>
+</body>
+</html>
